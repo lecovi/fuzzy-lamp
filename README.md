@@ -20,19 +20,19 @@ Copy environment variables from `env.dist`.
 ```bash
 cp env.dist .env
 ```
-(If you came from v0.0.2 do it again to update Environment Variables)
+(If you came from v0.0.3 do it again to update Environment Variables)
 
 Build docker image.
 
 ```bash
-docker build . -t fuzzy-lamp:0.0.3
+docker-compose build
 ```
 
-Run the app using `docker` instead of `poetry`.
+Run the app using `docker-compose` instead of `docker`.
 
 ```bash
-docker run --rm --name fuzzy-lamp-1 -v $PWD:/usr/src/app -p 5000:5000 fuzzy-lamp:0.0.3
-```
+docker-compose up
+````
 
 ### Run without Docker
 

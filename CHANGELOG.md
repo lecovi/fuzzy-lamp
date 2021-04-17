@@ -12,3 +12,7 @@
 
 - Updates Dockerfile with Python 3.10-rc
 - Adds this CHANGELOG file
+
+## v0.0.4
+
+- Adds docker-compose.yml
