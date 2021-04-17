@@ -4,13 +4,13 @@ from flask import Flask
 
 
 load_dotenv()
-VERSION = os.environ["VERSION"]
+__version__ = os.environ["VERSION"]
 APP_NAME = os.environ["APP_NAME"]
 
 app = Flask(__name__)
-app.logger.debug(f"Running {APP_NAME} v{VERSION}")
+app.logger.debug(f"Running {APP_NAME} v{__version__}")
 
 
 @app.route('/')
 def hello_world():
-    return f'Hello, World! from {APP_NAME} v{VERSION}'
+    return f'Hello, World! from {APP_NAME} v{__version__}'
